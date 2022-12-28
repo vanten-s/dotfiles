@@ -82,7 +82,7 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9}
-	bspc {desktop -f,node -d} '^{1-9}'
+	bspc {desktop -f,node -d} "$(bspc query -m -M):^{1-9}"
 
 #
 # preselect
@@ -126,5 +126,17 @@ super + {Left,Down,Up,Right}
 
 # passwords
 super + shift + p
-    /home/ricer/scripts/passwords.sh
+    /home/svante/scripts/passwords.sh
+
+super + shift + b
+    /home/svante/scripts/bookmarks.sh
+
+super + shift + u
+    /home/svante/scripts/usernames.sh
+
+XF86AudioLowerVolume
+    /home/svante/scripts/vol.sh dec
+
+XF86AudioRaiseVolume
+    /home/svante/scripts/vol.sh inc
 
