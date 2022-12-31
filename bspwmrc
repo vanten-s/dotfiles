@@ -12,6 +12,8 @@ dunst &
 
 nitrogen --restore
 setxkbmap -layout se
+playerctld &
+autorandr --load work
 
 # Config
 
