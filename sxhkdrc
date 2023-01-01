@@ -66,9 +66,9 @@ super + {p,b,comma,period}
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
-# focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+# focus the next/previous monitor
+super + {e,r}
+	bspc monitor -f {prev,next}
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -81,8 +81,9 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
+# bspc {desktop -f,node -d} "$(bspc query -m -M):^{1-9}"
 super + {_,shift + }{1-9}
-	bspc {desktop -f,node -d} "$(bspc query -m -M):^{1-9}"
+    bspc {desktop -f,node -d} '{1-9}'
 
 #
 # preselect
