@@ -35,6 +35,7 @@ alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgr
 alias ettercap-mitm='sudo ettercap -T -S -i wlan0 -M arp:remote'
 
 alias grep='grep --color=auto'
+alias access-server-ssh='cloudflared access ssh --hostname ssh-big-comp.vanten-s.com'
 
 eval "$(starship init zsh)"
 
@@ -44,3 +45,6 @@ export PATH="$PATH:/home/ricer/.local/bin"
 # source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=$PATH:/home/ricer/.spicetify
 export PATH=$PATH:/home/ricer/scripts
+
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
