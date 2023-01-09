@@ -127,17 +127,17 @@ super + {Left,Down,Up,Right}
 
 # passwords
 super + shift + p
-    /home/svante/scripts/passwords.sh
+    $HOME/scripts/passwords.sh
 
 super + shift + b
-    /home/svante/scripts/bookmarks.sh
+    $HOME/scripts/bookmarks.sh
 
 super + shift + u
-    /home/svante/scripts/usernames.sh
+    $HOME/scripts/usernames.sh
 
 XF86AudioLowerVolume
-    /home/svante/scripts/vol.sh dec
+    $HOME/scripts/vol.sh dec
 
 XF86AudioRaiseVolume
-    /home/svante/scripts/vol.sh inc
+    $HOME/scripts/vol.sh inc
 
